@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="Hot Beans Web logo.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Application Form</title>
+<style>
+	body{background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+}	
+</style>
+</head>
+
+<body background="1 (2).png">
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <p><button onclick="document.location='index.html'" class="w3-bar-item w3-button w3-indigo w3-hover-cyan w3-left w3-round-xlarge">HOME</button></p>
+    <p><button onclick="document.location='Our Team.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">OUR TEAM</button></p>
+    <p><button onclick="document.location='Job specification and qualification.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">JOB SPECIFICATION AND QUALIFICATION</button></p>
+	<p><button onclick="document.location='Application Form.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">ONLINE APPLICATION FORM</button></p>
+	<p><button onclick="document.location='Courses.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">COURSES</button></p>
+    <p><button onclick="document.location='Contact.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">CONTACT</button></p>
+	  
+	<div>
+	<p><button onclick="document.location='Sign in.html'" class="w3-bar-item w3-button w3-teal w3-hover-amber w3-right w3-round-xlarge">LOG IN</button></p>
+	  <div id="id01" class="w3-modal" style="cursor: pointer; display: none;">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px;cursor:auto">
+  
+    <div class="w3-center"><br>
+   <span onclick="document.getElementById('id01').style.display='none'" title="Close Modal" class="w3-button w3-hover-text-grey w3-container w3-display-topright w3-xxlarge">×</span>
+
+    </div>
+
+    <div class="w3-container">
+      <div class="w3-section">
+        <label><b>Username</b></label>
+        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username">
+
+        <label><b>Password</b></label>
+        <input class="w3-input w3-border" type="password" placeholder="Enter Password">
+        
+        <button class="w3-button w3-block w3-green w3-section w3-padding" onclick="document.getElementById('id01').style.display='none'">Login</button>
+        <label><input type="checkbox" checked="checked"> Remember me</label>
+      </div>
+    </div>
+
+    <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+      <button onclick="document.getElementById('id01').style.display='none'" type="button" class="ws-btn w3-red">Cancel</button>
+      <span class="w3-right w3-padding w3-hide-small">Forgot <a href="javascript:void(0)" onclick="document.getElementById('id01').style.display='none'">password?</a></span>
+    </div>
+
+  </div>
+</div>
+	  </div>
+	<p><button onclick="document.location='Sign up.html'" class="w3-bar-item w3-button w3-teal w3-hover-amber w3-right w3-round-xlarge">SIGN UP</button></p>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><input type="text" placeholder="Search.."><i class="fa fa-search"></i></a>
+	
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+	
+<h1 align="center">&nbsp;</h1>
+<h1 align="center" style="color:white">ONLINE APPLICATION FORM</h1>
+</body>
+</html>
