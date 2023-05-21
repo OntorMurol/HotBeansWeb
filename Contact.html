@@ -57,45 +57,13 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-	
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url("3.png");
-  min-height: 70%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("1.png");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("2.png");
-  min-height: 400px;
-}
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
 
-	</style>
+</style>
 </head>
 
 <body>
@@ -114,11 +82,11 @@ input[type=submit]:hover {
     <p><button onclick="document.location='Courses.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">COURSES</button></p>
     <p><button onclick="document.location='Contact.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">CONTACT</button></p>
 	  
-	<div>
-	<p><button onclick="document.location='Sign in.html'" class="w3-bar-item w3-button w3-teal w3-hover-amber w3-right w3-round-xlarge">LOG IN</button></p>
-		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><input type="text" placeholder="Search.."><i class="fa fa-search"></i></a>
-	  <div id="id01" class="w3-modal" style="cursor: pointer; display: none;">
-  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px;cursor:auto">
+<div>
+<p><button onclick="document.location='Sign in.html'" class="w3-bar-item w3-button w3-teal w3-hover-amber w3-right w3-round-xlarge">LOG IN</button></p>
+<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><input type="text" placeholder="Search..">&nbsp;<i class="fa fa-search"></i></a>
+<div id="id01" class="w3-modal" style="cursor: pointer; display: none;">
+<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px;cursor:auto">
   
     <div class="w3-center"><br>
    <span onclick="document.getElementById('id01').style.display='none'" title="Close Modal" class="w3-button w3-hover-text-grey w3-container w3-display-topright w3-xxlarge">×</span>
