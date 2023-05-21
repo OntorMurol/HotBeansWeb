@@ -61,7 +61,40 @@ input[type=submit]:hover {
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
+* {
+  box-sizing: border-box;
+}
 
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 </head>
 
@@ -83,7 +116,10 @@ input[type=submit]:hover {
 	  
 <div>
 <p><button onclick="document.location='Sign in.html'" class="w3-bar-item w3-button w3-teal w3-hover-amber w3-right w3-round-xlarge">LOG IN</button></p>
-
+<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
 <div id="id01" class="w3-modal" style="cursor: pointer; display: none;">
 <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px;cursor:auto">
   
