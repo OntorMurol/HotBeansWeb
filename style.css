@@ -69,3 +69,147 @@
     background: #58629b;
     cursor: pointer;
 }
+
+
+.titlename{
+    text-align: center;
+}
+
+
+
+
+
+.img-table
+          {
+              
+              position: relative;
+              width: 30%;
+              height: auto;
+              box-sizing: content-box;
+              padding: 20px;
+              margin: 0px 25px 20px 0px;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              bottom: 10px;
+              
+          }
+          
+          p{
+              text-align: justify; 
+              padding: 15px;
+                
+          }
+          h3{
+              text-align: center; 
+              margin: 15px;
+              
+          }
+          .underline-small{
+              color: black;
+
+              position: relative;
+              }
+          .underline-small::after{
+              content: '';
+              height: 2px;
+              width: 10%;
+              position: absolute;
+              background: #05173E;
+              left;20%;
+              bottom;0;
+          }
+          hr{
+             display: block;
+             margin-top: 0.5em;
+             margin-bottom: 0.5em;
+             margin-left: auto;
+             margin-right: auto;
+             border-style: solid;
+             border-width: 1px;
+             width: 30%;
+             box-sizing: content-box;
+             height: 0;
+             overflow: visible;
+          }
+          .navbar-brand img{
+             height: 50px;
+             padding-left: 0px;
+          }
+           html, body 
+          {
+              height: 100%;
+          }
+           #wrap {
+               min-height: 0%;
+          }
+           #main {
+               overflow:auto;
+	           padding-bottom: 100px;
+          }  /* must be same height as the footer */
+
+           .footer {
+               position: relative;
+               left: 0;
+               bottom: 0;
+               top: 16px;
+               width: 100%;
+               background-color: darkgray;
+               color: white;
+               text-align: center;
+}
+ 
+          } 
+          /*Opera Fix*/
+          body:before {
+	           content:"";
+	           height:100%;
+	           float:left;
+	           width:0;
+	           margin-top:-32767px;/
+          }
+          <type="text/css">
+		  #wrap {
+              display:table;height:100%
+          }
+          .bodytext{
+              margin-right: 15%;
+              margin-left: 15%;
+          }
+
+          .card-title{
+              text-align: center;
+          }
+
+          .card{
+              box-shadow: 10px 10px 10px rgba(0, 0, 0, 50%);
+         }
+          .card-img-top{
+         }
+          .card-text{
+                text-align: justify; 
+
+         }
+.card-positioning{
+
+}
+
+.margin{
+    margin: 20px;
+}
+        h2{
+              text-align: justify; 
+              margin: 15px;
+     }
+.marginright{
+    margin-right: 24px;
+           
+           }
+ 
+          .accordion.width{ 
+             
+            width: 60%; 
+        } 
+.card-body { 
+            width: 100%;  
+        } 
