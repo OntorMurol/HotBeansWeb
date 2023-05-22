@@ -6,9 +6,14 @@
     background: #d1e5ff;
 }
 :: -webkit-scrollbar-thumb{
-    background: linear-gradient(rgba(9,56,121,1));
+    background: linear-gradient(rgba(9,9,121,1));
     border-radius: 10px;
 }
+:: -webkit-scrollbar-thumb:hover{
+    background: linear-gradient(rgba(0,212,255,1));
+    border-radius: 10px;
+}
+
 
 
 *{
