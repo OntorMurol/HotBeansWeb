@@ -8,15 +8,14 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
 }
-	
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
@@ -48,17 +47,6 @@ body, html {
     min-height: 400px;
   }
 }
-.text {
-
-  font-weight: bold;
-  font-size: 40px;
-  padding: 10px;
-  width: 360px;
-  position: absolute;
- 
-}
-	
-	
 
 </style>
 <link href="Sign in.html.css" rel="stylesheet" type="text/css">
@@ -71,12 +59,15 @@ body, html {
     <a class="w3-bar-item w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <p><button onclick="document.location='index.html'" class="w3-bar-item w3-button w3-indigo w3-hover-cyan w3-left w3-round-xlarge">HOME</button></p><p><button onclick="document.location='Our Team.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">OUR TEAM</button></p><p><button onclick="document.location='Job specification and qualification.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">JOB SPECIFICATION AND QUALIFICATION</button></p><p><button onclick="document.location='Application Form.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">ONLINE APPLICATION FORM</button></p><p><button onclick="document.location='Courses.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">COURSES</button></p><p><button onclick="document.location='Contact.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">CONTACT</button></p>
+    <p><button onclick="document.location='index.html'" class="w3-bar-item w3-button w3-indigo w3-hover-cyan w3-left w3-round-xlarge">HOME</button></p>
+    <p><button onclick="document.location='Our Team.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">OUR TEAM</button></p>
+    <p><button onclick="document.location='Job specification and qualification.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">JOB SPECIFICATION AND QUALIFICATION</button></p>
+	<p><button onclick="document.location='Application Form.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">ONLINE APPLICATION FORM</button></p>
+	<p><button onclick="document.location='Courses.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">COURSES</button></p>
+    <p><button onclick="document.location='Contact.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">CONTACT</button></p>
 	  
 	<div>
 	<p><button onclick="document.location='Sign in.html'" class="w3-bar-item w3-button w3-teal w3-hover-amber w3-right w3-round-xlarge">LOG IN</button></p>
-		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><input type="text" placeholder="Search.."><i class="fa fa-search"></i></a>
-
 	  <div id="id01" class="w3-modal" style="cursor: pointer; display: none;">
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px;cursor:auto">
   
@@ -99,15 +90,16 @@ body, html {
     </div>
 
     <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
-      <button onclick="document.location='index.html'" .style.display='none'" type="button" class="ws-btn w3-red">Cancel</button>
+      <button onclick="document.getElementById('id01').style.display='none'" type="button" class="ws-btn w3-red">Cancel</button>
       <span class="w3-right w3-padding w3-hide-small">Forgot <a href="javascript:void(0)" onclick="document.getElementById('id01').style.display='none'">password?</a></span>
     </div>
 
   </div>
-  </div>  
 </div>
-  </div>
-
+	  </div>
+	
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><input type="text" placeholder="Search.."><i class="fa fa-search"></i></a>
+	
   </div>
 
   <!-- Navbar on small screens -->
@@ -121,10 +113,9 @@ body, html {
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;" class="image-container">
-	 <p>&nbsp; &nbsp; &nbsp; &nbsp;<img src="Hot Beans Web logo.png" alt="HBW logo" width="285" height="191" style="width:300px;height:210px"></p>
-  <h1 style="color:SlateBlue;" class="text">HOT BEANS WEB</h1>
-
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="Hot Beans Web logo.png" alt="HBW logo" width="285" height="191" style="width:300px;height:210px"></p>
+    <p style="font-size:40px;color: rosybrown"><span class="w3-center w3-20 w3-wide w3-animate-opacity"><strong>HOT <span class="w3-center w3-20 w3-wide w3-animate-opacity"> BEANS </span> WEB</strong></span></p>
   </div>
 </div>
 
@@ -144,10 +135,9 @@ body, html {
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center"></h3>
-  <p style="color:'black'" class="w3-center w3-xxlarge"><strong>Hot Beans Web is a leading web development company known for its expertise in creating exceptional online experiences.
+  <p class="w3-center w3-xxlarge">Hot Beans Web is a leading web development company known for its expertise in creating exceptional online experiences.
 	  
-	  With a team of skilled professionals, Hot Beans Web specializes in crafting innovative and user-friendly websites and web applications for businesses across various industries.
-	  </strong></p><br>
+	  With a team of skilled professionals, Hot Beans Web specializes in crafting innovative and user-friendly websites and web applications for businesses across various industries.</p><br>
    
   </div>
 
