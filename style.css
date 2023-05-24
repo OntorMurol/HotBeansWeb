@@ -5,6 +5,12 @@
 
 .img-table
           {
+            display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  width: 90%;
+                  margin-left: 5%; 
               
               position: relative;
               width: 30%;
