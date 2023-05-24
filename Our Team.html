@@ -7,9 +7,13 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Our Team</title>						
+<title>Our Team</title>
 
 <style>
+* {
+  box-sizing: border-box;
+	}
+	
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
              height: 100%;
@@ -19,9 +23,40 @@ body, html {
              background-position: center;
              background-repeat: no-repeat;
              background-size: cover;
-}
-	
 
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: transparent;
+}
 </style>
 </head>
 	
@@ -36,13 +71,12 @@ body, html {
     <p><button onclick="document.location='index.html'" class="w3-bar-item w3-button w3-indigo w3-hover-cyan w3-left w3-round-xlarge">HOME</button></p>
     <p><button onclick="document.location='Our Team.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">OUR TEAM</button></p>
     <p><button onclick="document.location='Job specification and qualification.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">JOB SPECIFICATION AND QUALIFICATION</button></p>
-    <p><button onclick="document.location='Application Form.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">ONLINE APPLICATION FORM</button></p>
-    <p><button onclick="document.location='Courses.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">COURSES</button></p>
+	<p><button onclick="document.location='Application Form.html'" class="w3-bar-item w3-button w3-hide-large w3-indigo w3-hover-cyan w3-left w3-round-xlarge">ONLINE APPLICATION FORM</button></p>
+	<p><button onclick="document.location='Courses.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">COURSES</button></p>
     <p><button onclick="document.location='Contact.html'" class="w3-bar-item w3-button w3-hide-small w3-indigo w3-hover-cyan w3-left w3-round-xlarge">CONTACT</button></p>
 	  
 	<div>
 	<p><button onclick="document.location='Sign in.html'" class="w3-bar-item w3-button w3-teal w3-hover-amber w3-right w3-round-xlarge">LOG IN</button></p>
-		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><input type="text" placeholder="Search.."><i class="fa fa-search"></i></a>
 	  <div id="id01" class="w3-modal" style="cursor: pointer; display: none;">
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px;cursor:auto">
   
@@ -73,6 +107,7 @@ body, html {
 </div>
 	  </div>
 
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><input type="text" placeholder="Search.."><i class="fa fa-search"></i></a>
 	
   </div>
 
@@ -85,6 +120,14 @@ body, html {
   </div>
 </div>
 	
+<!-- Second Parallax Image with Portfolio Text -->
+
+  
+
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+
 
 
 
@@ -92,94 +135,49 @@ body, html {
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
 </div>	
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
-	
-Bill Gates.png-CEO
-	
-Morgan Freeman.png-Design Manager
-	
-Robert Downey Jr.png-Front-end Developer & Web Developer
-	
-paul Rudd-UX Designer & Full Stack Developer
 	
 	
-<div class="titlename">  
-      <h1>Our Team</h1>
-</div>
-<br>
-
-<div class="container">
-  <div class="row align-items-start">
-    <div class="col">
-      <div class="card" style="width:330px">
-    <img class="card-img-top" src="Bill Gates.jpg" alt="Face" style="width:100.5%">
-    <div class="card-body">
-      <h4 class="card-title">Jack Morshy</h4>
-	    <p>CEO</p>
-      <p>Jack is the CEO of HOT BEANS WEB. He deals with major corporate decisions and managing the overall operations and resources of HOT BEANS WEB.</p>
-    </div>
-    </div>
-    </div>
-    <div class="col">
-<br>
-    </div>
-    <div class="col"><br>
-    <div class="card" style="width:330px">
-    <img class="card-img-top" src="Morgan Freeman.jpg" alt="Face" style="width:100.5%">
-    <div class="card-body">
-      <h4 class="card-title">Bebil Noland</h4>
-	     <p>Design Manager</p>
-      <p class="card-text">Bebil mostly deals with the back end development but he can also work in other areas of website development. He is also helping out Felix who is our newest member.</p>
+	
+	
+	
+	
+	
+<div class="row">
+  <div class="column">
+    <div class="card">
+		<h3><a img src="Bill Gates.jpg">Jack Morshy</a></h3>
+      <p>Some text</p>
+      <p>Some text</p>	
+      <p>Some text</p>
     </div>
   </div>
-    </div>
   </div>
-  <br>
-  <div class="row align-items-center">
-    <div class="col"><br>
-      <div class="card" style="width:330px">
-    <img class="card-img-top" src="Robert Downey Jr.jpg" alt="Face" style="width:100.5%">
-    <div class="card-body">
-      <h4 class="card-title">Kelvin Turner</h4>
-	     <p>Front-end Developer & Web Developer</p>
-      <p class="card-text">Kelvin is the other CEO of hot beans. He Deals with the same things as Jack and he also works on front end tasks.</p>
-    </div>
-  </div>
-    </div>
-    <div class="col">
-      
-    </div>
-    <div class="col"><br> 
-      <div class="card" style="width:330px">
-    <img class="card-img-top" src="paul rudd.png" alt="Face" style="width:100.5%">
-    <div class="card-body">
-      <h4 class="card-title">Felix Lester</h4>
-	     <p>UX Designer & Full Stack Developer</p>
-      <p class="card-text">Felix is the newest member of the hot beans team and is working with Bebil to gain experience about our company.</p>
-    </div>
-    </div>
-    </div>
-  </div>
-  <div class="row align-items-end">
-    <div class="col">
-     
-    </div>
-    <div class="col">
-   
-    </div>
-    <div class="col">
-   
-    </div>
-  </div>
-</div>	
 	
 	
 	
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+	
+	
+	
+	
+	
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Copyright 1999-2023 by Refsnes Data. All Rights Reserved.	  </p>
+  <p>Hot Beans Web is Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+	
 <script>
 // Modal Image Gallery
 function onClick(element) {
