@@ -89,7 +89,12 @@
 
          }
 .card-positioning{
-
+                  display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  width: 90%;
+                  margin-left: 5%;
 }
 
 .margin{
@@ -109,5 +114,10 @@
             width: 60%; 
         } 
 .card-body { 
-            width: 100%;  
+            display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  width: 90%;
+                  margin-left: 5%; 
         } 
