@@ -10,15 +10,6 @@
 <title>Our Team</title>
 
 <style>
-body, html {
-             height: 100%;
-             color: #777;
-             line-height: 1.8;
-             background-attachment: fixed;
-             background-position: center;
-             background-repeat: no-repeat;
-             background-size: cover;
-
 * {
   box-sizing: border-box;
 }
@@ -27,41 +18,38 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
 
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
+  padding: 16px;
   text-align: center;
-  font-family: arial;
-}
-
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
-button:hover, a:hover {
-  opacity: 0.7;
+  background-color: #f1f1f1;
 }
 
 </style>
@@ -142,43 +130,37 @@ button:hover, a:hover {
 	
 	
 	
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Jack Berley</h3>
+      <p>CEO</p>
+      <p>Some text</p>
+    </div>
+  </div>
 
-<div class="card">
-  <img src="Bill Gates.jpg" alt="Bill" style="width:1%">
-  <h1>Jack Berley</h1>
-  <p class="title">CEO</p>
+  <div class="column">
+    <div class="card">
+      <h4>Dominic Down</h4>
+      <p>Web Developer-Senior</p>
+      <p>Some text</p>
+    </div>
+  </div>
   
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble"></i></a> 
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="#"><i class="fa fa-facebook"></i></a> 
+  <div class="column">
+    <div class="card">
+      <h5>Valhad Vrosh</h5>
+      <p>UX Designer & Back-end Developer</p>
+      <p>Some text</p>
+    </div>
   </div>
-</div>
-	
-<div class="card">
-  <img src="Morgan Freeman.jpg" alt="Morgan" style="width:1%">
-  <h1>Dominic Down</h1>
-  <p class="title">WEB DEVELOPER</p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble"></i></a> 
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="#"><i class="fa fa-facebook"></i></a> 
-  </div>
-</div>
-	
-
-
-<div class="card">
-  <img src="Robert Downey Jr.jpg" alt="Robert" style="width:1%">
-  <h1>Valhad Vrosh</h1>
-  <p class="title">UX DESIGNER & BACK-END DEVELOPER</p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble"></i></a> 
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="#"><i class="fa fa-facebook"></i></a> 
+  
+  <div class="column">
+    <div class="card">
+      <h6>Luno Bright</h6>
+      <p>Web Developer</p>
+      <p>Some text</p>
+    </div>
   </div>
 </div>
 	
